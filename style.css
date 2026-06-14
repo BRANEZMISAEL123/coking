@@ -1,0 +1,80 @@
+body{
+    background-color:#121212;
+    color:white;
+}
+
+.navbar{
+    background-color:#000;
+}
+
+.hero{
+    background:
+    linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+    url('https://images.unsplash.com/photo-1556910103-1c02745aae4d');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.card{
+    background-color:#1e1e1e;
+    color:white;
+    border:1px solid #333;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.numero{
+    color:orange;
+    font-size:50px;
+    font-weight:bold;
+}
+
+footer{
+    background:black;
+    padding:20px;
+}
+
+.modal-content{
+    background-color:#1e1e1e;
+    color:white;
+}
+
+.contacto{
+    padding:80px 0;
+}
+
+.form-control{
+    background-color:#1e1e1e;
+    color:white;
+    border:1px solid #444;
+}
+
+.form-control::placeholder{
+    color:#aaa;
+}
+
+.btn-enviar{
+    background-color:orange;
+    color:white;
+}
+
+.btn-enviar:hover{
+    background-color:#ff6600;
+    color:white;
+}
+
+.table{
+    background-color:#1e1e1e;
+    color:white;
+}
+
+.table th{
+    background-color:#ff8c00;
+    color:white;
+}

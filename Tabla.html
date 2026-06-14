@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tabla de Cursos - Cooking Academy</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+
+<div class="container">
+
+<a class="navbar-brand" href="#">Cooking Academy</a>
+
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Inicio</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="Curso.html">Cursos</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="Contacto.html">Contacto</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="Carrusel.html">Carrusel</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="Galeria.html">Galería</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="Tabla.html">Tabla</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- Contenido -->
+
+<div class="container py-5">
+
+<h1 class="text-center mb-4">
+Nuestros Cursos
+</h1>
+
+<table class="table table-bordered table-hover text-center">
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+<th>Curso</th>
+<th>Duración</th>
+<th>Modalidad</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tablaCursos">
+
+</tbody>
+
+</table>
+
+</div>
+
+<footer class="text-center">
+
+<p>
+
+© 2026 Cooking Academy
+
+<br>
+
+BRAÑEZ VINO MISAEL TOMAS
+
+</p>
+
+</footer>
+
+<script>
+
+let cursos = [
+
+{
+id:1,
+nombre:"Repostería",
+duracion:"3 meses",
+modalidad:"Presencial"
+},
+
+{
+id:2,
+nombre:"Cocina Internacional",
+duracion:"4 meses",
+modalidad:"Virtual"
+},
+
+{
+id:3,
+nombre:"Chef Profesional",
+duracion:"6 meses",
+modalidad:"Presencial"
+},
+
+{
+id:4,
+nombre:"Gastronomía Boliviana",
+duracion:"2 meses",
+modalidad:"Virtual"
+}
+
+];
+
+let tabla = document.getElementById("tablaCursos");
+
+cursos.forEach(curso => {
+
+tabla.innerHTML += `
+
+<tr>
+
+<td>${curso.id}</td>
+
+<td>${curso.nombre}</td>
+
+<td>${curso.duracion}</td>
+
+<td>${curso.modalidad}</td>
+
+</tr>
+
+`;
+
+});
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
